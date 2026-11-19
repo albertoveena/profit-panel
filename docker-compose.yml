@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: profit-panel-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-profitpanel}
+      MYSQL_DATABASE: profit_panel
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:

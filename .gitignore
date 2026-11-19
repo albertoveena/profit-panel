@@ -1,0 +1,16 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iml
+
+### VS Code ###
+.vscode/*
+!.vscode/extensions.json
+
+### Mac ###
+.DS_Store
+
+### Variables de entorno ###
+.env
